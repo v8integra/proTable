@@ -1,0 +1,86 @@
+<!-- html boiler plate template -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keith J Francis">
+    <meta name="description" content="Professional table">
+    <meta name="keywords" content="">
+    <title>Professional Table</title>
+
+    <!-- Links -->
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Dark mode -->
+    <div class="theme-toggle" id="theme-toggle">Dark Mode</div>
+
+    <!-- Container -->
+    <div class="container">
+      <h1>Most Active Users</h1>
+
+      <!-- loader -->
+      <div class="spinner" id="spinner">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+
+      <!-- table -->
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th class="name-column">Name <i class="fas fa-sort" id="icon-0"></i></th>
+            <th class="email-column">Email <i class="fas fa-sort" id="icon-1"></i></th>
+            <th class="username-column">Username <i class="fas fa-sort" id="icon-2"></i></th>
+            <th class="counrty-column">Country <i class="fas fa-sort" id="icon-3"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name Here</td>
+            <td>Email Here</td>
+            <td>Username Here</td>
+            <td>Country Here</td>
+          </tr>
+          <tr>
+            <td>Name Here</td>
+            <td>Email Here</td>
+            <td>Username Here</td>
+            <td>Country Here</td>
+          </tr>
+          <tr>
+            <td>Name Here</td>
+            <td>Email Here</td>
+            <td>Username Here</td>
+            <td>Country Here</td>
+          </tr>
+          <tr>
+            <td>Name Here</td>
+            <td>Email Here</td>
+            <td>Username Here</td>
+            <td>Country Here</td>
+          </tr>
+          <tr>
+            <td>Name Here</td>
+            <td>Email Here</td>
+            <td>Username Here</td>
+            <td>Country Here</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Pagination -->
+       <div class="pagination">
+        <button type="button" id="prev-btn" title="Previous Page">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <span id="page-number">1</span>
+        <button type="button" id="next-btn" title="Next Page">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+       </div>
+    </div>
+  </body>
+</html>
